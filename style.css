@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    /* Color Palette */
+    --color-sage: #A7B7A4;
+    --color-sand: #E0D7CD;
+    --color-blush: #F2E8E0;
+    --color-stone: #9A8C84;
+    --color-deep-sage: #697968;
+    --color-warm-brown: #8D7E70;
+    --color-ebony: #2D241E;
+    
+    /* Semantic Colors */
+    --bg-primary: var(--color-blush);
+    --bg-secondary: var(--color-sand);
+    --text-primary: var(--color-ebony);
+    --text-secondary: var(--color-deep-sage);
+    --accent: var(--color-warm-brown);
+    
+    /* Spacing */
+    --section-padding: 100px 5%;
+    --container-width: 1200px;
+    
+    /* Transitions */
+    --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-smooth);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Navigation --- */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 1000;
+    transition: var(--transition-smooth);
+}
+
+nav.scrolled {
+    background: rgba(242, 232, 224, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    color: var(--color-deep-sage);
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-sand) 100%);
+    position: relative;
+    padding-top: 80px;
+}
+
+.hero-content {
+    max-width: 800px;
+    z-index: 2;
+}
+
+.hero-logo {
+    width: 350px;
+    max-width: 90%;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.05));
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--color-ebony);
+    font-style: italic;
+    animation: fadeInUp 1.4s ease-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: var(--text-secondary);
+    animation: fadeInUp 1.6s ease-out;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 18px 45px;
+    background-color: var(--color-ebony);
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 15px 35px rgba(45, 36, 30, 0.2);
+    animation: fadeInUp 1.8s ease-out;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(45, 36, 30, 0.3);
+}
+
+/* --- Sections --- */
+section {
+    padding: var(--section-padding);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- Essence Section --- */
+.essence {
+    background-color: #fff;
+}
+
+.essence-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.essence-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-deep-sage);
+}
+
+.essence-image {
+    width: 100%;
+    height: 500px;
+    background-color: var(--color-sage);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.essence-image::after {
+    content: 'Natural & Funcional';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display';
+    font-size: 1.5rem;
+    color: rgba(255,255,255,0.5);
+    font-style: italic;
+}
+
+/* --- Benefits Grid --- */
+.benefits {
+    background-color: var(--color-sand);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.benefit-card {
+    background: #fff;
+    padding: 50px 40px;
+    border-radius: 20px;
+    text-align: center;
+    transition: var(--transition-smooth);
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-card i {
+    font-size: 2.5rem;
+    color: var(--color-sage);
+    margin-bottom: 25px;
+    display: block;
+}
+
+.benefit-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--color-ebony);
+    color: var(--color-blush);
+    padding: 80px 0 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 100px;
+    margin-bottom: 60px;
+}
+
+.footer-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* --- Animations --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .essence-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+    .footer-content { grid-template-columns: 1fr; gap: 40px; }
+}
