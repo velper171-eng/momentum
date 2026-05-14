@@ -350,6 +350,7 @@ section {
 .pack-card:hover {
     background: var(--color-sand);
     transform: scale(1.03);
+    cursor: pointer;
 }
 
 .pack-card img {
