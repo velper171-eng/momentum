@@ -568,7 +568,8 @@ footer {
     width: 100%;
     max-width: 900px;
     border-radius: 30px;
-    overflow: hidden;
+    overflow-y: auto;
+    max-height: 95vh;
     box-shadow: 0 40px 100px rgba(0,0,0,0.2);
     transform: scale(0.9) translateY(20px);
     opacity: 0;
@@ -701,18 +702,30 @@ footer {
     }
     
     .modal-image {
-        height: 300px;
+        height: 250px;
     }
     
     .modal-details {
-        padding: 30px;
+        padding: 25px;
     }
     
     .modal-details h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .modal-details p {
+        font-size: 1rem;
+        margin-bottom: 20px;
     }
     
     .modal-features ul {
         grid-template-columns: 1fr;
+    }
+
+    .modal-footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
     }
 }
