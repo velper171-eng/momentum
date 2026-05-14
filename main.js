@@ -78,7 +78,7 @@ const productData = {
         price: '$4.500 COP'
     },
     'pack-6': {
-        title: 'Essential 6-Pack',
+        title: 'Primer Impulso',
         tag: 'Colección',
         description: 'La introducción perfecta al mundo Momentum. Este pack contiene una selección variada de nuestras barras funcionales, ideal para quienes buscan equilibrio y energía durante su semana laboral o de entrenamiento.',
         image: 'assets/pack_6.png',
@@ -86,7 +86,7 @@ const productData = {
         price: '$24.900 COP'
     },
     'pack-8': {
-        title: 'Assorted 8-Pack',
+        title: 'Momento Vital',
         tag: 'Favoritos',
         description: 'Dos de cada una de nuestras barras insignia (Fluye, Respira, Ilumina, Enfoca). El equilibrio perfecto para tu rutina diaria, asegurando que tengas el impulso adecuado para cada momento del día.',
         image: 'assets/pack_8.png',
@@ -94,7 +94,7 @@ const productData = {
         price: '$32.500 COP'
     },
     'pack-16': {
-        title: 'Premium 16-Pack',
+        title: 'Power Pack',
         tag: 'Elite',
         description: 'La experiencia Momentum completa. Este pack de 16 unidades te garantiza una nutrición funcional constante y variada. Diseñado para optimizar tu rendimiento a largo plazo y compartir bienestar con quienes más quieres.',
         image: 'assets/pack_16.png',
