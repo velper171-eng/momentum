@@ -48,30 +48,30 @@ const productData = {
     'fluye': {
         title: 'Momentum Fluye',
         tag: 'Bienestar',
-        description: 'Encuentra tu centro con una mezcla diseñada para armonizar tu sistema. Rica en fibra natural y prebióticos que favorecen una digestión ligera y un equilibrio constante.',
+        description: 'Recupera tu ligereza natural y despídete de la pesadez. Momentum Fluye está cuidadosamente diseñada para ser tu aliada perfecta después de las comidas o en esos días donde tu cuerpo pide un respiro. Gracias a las propiedades digestivas y antiinflamatorias naturales del jengibre y la frescura de la piña, combinadas con la suavidad del coco, esta barra trabaja en completa armonía con tu sistema digestivo.',
         image: 'assets/bar_fluye.png',
-        benefits: ['Mejora la digestión', 'Prebióticos naturales', 'Sin azúcar añadida', 'Fibra de alta calidad']
+        benefits: ['Optimización Digestiva', 'Acción Antiinflamatoria', 'Bienestar Corporal', 'Energía Natural']
     },
     'respira': {
         title: 'Momentum Respira',
         tag: 'Calma',
-        description: 'Un momento de pausa en tu día. Formulada con ingredientes que promueven la relajación muscular y la calma mental, ideal para recuperarte después de un momento de estrés.',
+        description: 'Encuentra tu centro y regálate un santuario de paz en medio del caos diario. Momentum Respira es mucho más que un snack; es un momento de autocuidado convertido en barra. Formulada con las notas aromáticas y funcionales de la lavanda y el sabor reconfortante del cacao y la mora, sus ingredientes actúan de manera sinérgica para promover la relajación del sistema nervioso.',
         image: 'assets/bar_respira.png',
-        benefits: ['Reduce el cortisol', 'Magnesio natural', 'Efecto relajante', 'Ingredientes botánicos']
+        benefits: ['Control del Estrés', 'Equilibrio Alimenticio', 'Relajación Mental', 'Pausa Saludable']
     },
     'ilumina': {
         title: 'Momentum Ilumina',
         tag: 'Claridad',
-        description: 'Potencia tus ideas con energía limpia. Esta barra combina superalimentos que nutren tu cerebro, mejorando la retención y la agilidad mental para tus proyectos más creativos.',
+        description: 'El verdadero brillo nace desde tu interior. Momentum Ilumina es el complemento perfecto para potenciar tu rutina de belleza y cuidado personal. Creada bajo la premisa de que la salud que cultivas por dentro se refleja en el exterior, esta deliciosa mezcla de fresa, coco y vainilla está cargada de nutrientes esenciales para tu piel, cabello y uñas.',
         image: 'assets/bar_ilumina.png',
-        benefits: ['Enfoque cognitivo', 'Antioxidantes', 'Vitamina B complex', 'Energía cerebral']
+        benefits: ['Cuidado Dermatológico', 'Fortalecimiento Capilar', 'Salud en Uñas', 'Antioxidante Natural']
     },
     'enfoca': {
         title: 'Momentum Enfoca',
         tag: 'Rendimiento',
-        description: 'El combustible para tus desafíos físicos y mentales. Diseñada para una liberación sostenida de energía que te permite mantener el rendimiento máximo durante horas.',
+        description: 'Despierta tu mente y eleva tu productividad sin sacrificar tu equilibrio. Momentum Enfoca es la barra definitiva para mentes exigentes. Su ingrediente estrella, el hongo adaptógeno Melena de León, es reconocido por estimular la agilidad mental, mejorando la concentración, la memoria y el enfoque.',
         image: 'assets/bar_enfoca.png',
-        benefits: ['Energía prolongada', 'Proteína vegetal', 'Bajo índice glucémico', 'Resistencia física']
+        benefits: ['Agilidad Mental', 'Energía Sostenida', 'Apoyo Cognitivo', 'Rendimiento Prolongado']
     }
 };
 
